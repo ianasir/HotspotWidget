@@ -1,2 +1,3 @@
-@rem Gradle wrapper for Windows
-@rem Run: gradlew.bat assembleDebug
+@echo off
+cd app
+gradle assembleDebug

@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.HotspotWidget" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#22C55E</item>
+        <item name="colorPrimaryDark">#16A34A</item>
+        <item name="colorAccent">#22C55E</item>
+        <item name="android:windowBackground">#F5F5F5</item>
+    </style>
+</resources>

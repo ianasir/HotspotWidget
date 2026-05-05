@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- App title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotspot Widget"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple one-tap hotspot control"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Current status card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotspot Status"
+                android:textSize="13sp"
+                android:textColor="#888888"
+                android:textAllCaps="true"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tv_main_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking..."
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Big toggle button in main app -->
+            <Button
+                android:id="@+id/btn_main_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Turn ON Hotspot"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#22C55E"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="0dp" />
+
+        </LinearLayout>
+
+        <!-- How to add widget card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Widget to Home Screen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 1:  Press and hold your home screen"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 2:  Tap &quot;Widgets&quot;"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 3:  Find &quot;Hotspot Widget&quot;"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 4:  Drag it to your home screen"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 5:  Tap the big button to toggle!"
+                android:textSize="15sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <!-- Permission note card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background_yellow"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠  Important Note"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#92400E"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 8 and newer requires you to allow this app to modify system settings. If a permission screen appears, please tap Allow."
+                android:textSize="14sp"
+                android:textColor="#78350F"
+                android:lineSpacingMultiplier="1.4" />
+
+        </LinearLayout>
+
+        <!-- Grant permission button -->
+        <Button
+            android:id="@+id/btn_grant_permission"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Grant Required Permission"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3B82F6"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_permission_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

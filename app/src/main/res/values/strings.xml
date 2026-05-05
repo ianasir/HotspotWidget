@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hotspot Widget</string>
+    <string name="widget_description">One-tap hotspot toggle for home screen</string>
+    <string name="hotspot_on">Hotspot is ON</string>
+    <string name="hotspot_off">Hotspot is OFF</string>
+    <string name="tap_to_turn_on">Tap to turn ON</string>
+    <string name="tap_to_turn_off">Tap to turn OFF</string>
+    <string name="turning_on">Turning on…</string>
+    <string name="turning_off">Turning off…</string>
+    <string name="permission_granted">Permission granted!</string>
+    <string name="permission_needed">Permission not yet granted. Tap the button above.</string>
+</resources>

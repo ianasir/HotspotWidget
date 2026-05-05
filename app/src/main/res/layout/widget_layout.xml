@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/widget_background"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <!-- Big ON/OFF Button (left side) -->
+    <LinearLayout
+        android:id="@+id/btn_toggle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/btn_off_background"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tv_power_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/tv_tap_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to turn ON"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Right panel: status + info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp">
+
+        <!-- Status indicator row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <View
+                android:id="@+id/status_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_off"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tv_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotspot is OFF"
+                android:textSize="13sp"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Network name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network: "
+                android:textSize="11sp"
+                android:textColor="#888888" />
+
+            <TextView
+                android:id="@+id/tv_network_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <!-- Devices connected -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devices: "
+                android:textSize="11sp"
+                android:textColor="#888888" />
+
+            <TextView
+                android:id="@+id/tv_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Data used -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data used: "
+                android:textSize="11sp"
+                android:textColor="#888888" />
+
+            <TextView
+                android:id="@+id/tv_data_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="–"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
